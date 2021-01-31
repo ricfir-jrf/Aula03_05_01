@@ -22,6 +22,7 @@ const studentSchema = mongoose.Schema({
         //         throw new Error("Não é permitido Valor negativo para a nota.")
         //     }
         // }
+        // Valida se a nota inserida é menor que zero.
         min: 0,
     },
     lastModified: {
