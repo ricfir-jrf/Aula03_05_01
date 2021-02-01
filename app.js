@@ -16,9 +16,9 @@ const app = express();
 // const dotenv = require('dotenv')
 const result = dotenv.config();
 
-console.log(process.env.USERDB);
-console.log(process.env.PWDDB);
-console.log(process.env.PORT);
+// console.log(process.env.USERDB);
+// console.log(process.env.PWDDB);
+// console.log(process.env.PORT);
 
 // Conexão com o Mongoose.
 (async () => {
