@@ -43,19 +43,19 @@ app.patch('/student/:id', async (req, res) => {
 });
 
 // Update com Put
-// app.put('/student/:id', async (req, res) => {
-//     try {
-//         const id = req.params.id;
+app.put('/student/:id', async (req, res) => {
+    try {
+        const id = req.params.id;
 
-//         // Com o option {new: true} a atualização retornará o objeto atualizado.
-//         // studentModel.findByIdAndUpdate(id?,update?,option?)
-//         const student = await studentModel.findOneAndUpdate({_id: id}, req.body, {new: true,});
+        // Com o option {new: true} a atualização retornará o objeto atualizado.
+        // studentModel.findByIdAndUpdate(id?,update?,option?)
+        const student = await studentModel.findOneAndUpdate({_id: id}, req.body, {new: true,});
 
-//         res.send(student);
-//     } catch (error) {
-//         res.status(500).send(error);
-//     }
-// });
+        res.send(student);
+    } catch (error) {
+        res.status(500).send(error);
+    }
+});
 
 
 // Delete by Id
