@@ -24,7 +24,7 @@ console.log(process.env.PORT);
 (async () => {
     try {
         await mongoose.connect("mongodb+srv://" + process.env.USERDB + ":" + process.env.PWDDB + "@cluster0.8ugcv.mongodb.net/" + process.env.NAMEDB + "?retryWrites=true&w=majority",
-            {
+             {
             useNewUrlParser: true,
             useUnifiedTopology: true
             }
