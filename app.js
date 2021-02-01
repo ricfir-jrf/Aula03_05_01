@@ -1,12 +1,22 @@
 // Imports
 import express from 'express';
 import mongoose from 'mongoose';
+// import { config } from 'dotenv';
+import dotenv from 'dotenv'
 
 import {studentRouter} from './routes/studentRouter.js'
 
 const app = express();
 
-require('dotenv').config();
+// require('dotenv').config();
+// const userDB = dotenv.config().parsed['USERDB'];
+// const pswDB = config().parsed['PWDDB'];
+// const porta = config().parsed['PORT'];
+
+// const dotenv = require('dotenv')
+const result = dotenv.config();
+
+console.log(process.env.USERDB);
 
 // Conexão com o Mongoose.
 (async () => {
